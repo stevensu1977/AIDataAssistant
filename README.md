@@ -11,16 +11,28 @@ A native macOS application that enables natural language database queries powere
 ## ✨ Features
 
 - 🗣️ **Natural Language Queries** - Ask questions in plain English, get SQL results
-- 🤖 **AI-Powered** - Leverages AWS Bedrock (Claude 3.5) for intelligent SQL generation
-- 💾 **Multi-Database Support** - SQLite and MySQL (PostgreSQL coming soon)
-- � **Smart Results Display** - Clean, tabular presentation of query results
+- 🤖 **AI-Powered** - Leverages AWS Bedrock (Claude 3.5/4.5) for intelligent SQL generation
+- 💾 **Multi-Database Support** - SQLite, MySQL, PostgreSQL, DuckDB
+- 📊 **Smart Results Display** - Clean, tabular presentation of query results
 - 💡 **Query Explanations** - AI automatically explains generated SQL queries
 - 🔍 **Schema Browser** - Visual database structure exploration
 - ⚡ **Direct SQL Mode** - Switch between natural language and raw SQL input
 
 ## 📸 Screenshots
 
-<!-- Add screenshots here -->
+### Database Configuration
+![Database Config](Screenshot/db_config_01.png)
+![Database Config Detail](Screenshot/db_config_02.png)
+
+### AWS Bedrock Configuration
+![Bedrock Config](Screenshot/bedrock_config.png)
+
+### Query Interface
+![SQL Query](Screenshot/sql_query.png)
+![AI Enhanced Query](Screenshot/ai_enhanced.png)
+
+### Connection Settings
+![Config](Screenshot/config.png)
 
 ## 🛠 Tech Stack
 
@@ -29,7 +41,7 @@ A native macOS application that enables natural language database queries powere
 | Language | Swift 5.9+ |
 | UI Framework | SwiftUI |
 | Platform | macOS 14.0+ (Sonoma) |
-| Databases | SQLite, MySQL |
+| Databases | SQLite, MySQL, DuckDB |
 | AI Service | AWS Bedrock (Claude 3.5) |
 | Architecture | MVVM + Protocol-Oriented |
 
@@ -40,7 +52,7 @@ A native macOS application that enables natural language database queries powere
 - macOS 14.0 or later
 - Xcode 15.0 or later
 - AWS Account with Bedrock access
-- A database to query (SQLite or MySQL)
+- A database to query (SQLite, MySQL, or DuckDB)
 
 ### Installation
 
@@ -65,6 +77,7 @@ A native macOS application that enables natural language database queries powere
 2. Configure your database:
    - **SQLite**: Browse to select your `.db` file
    - **MySQL**: Enter host, port, username, password, and database name
+   - **DuckDB**: Select in-memory or file mode, attach Parquet/CSV/JSON files
 3. Configure AWS Bedrock:
    - Enter your AWS Region (e.g., `us-east-1`)
    - Enter AWS Access Key ID and Secret Access Key
@@ -101,52 +114,25 @@ AIDataAssistant/
 ## 🔧 Development
 
 ### Build
-
 ```bash
 swift build
 ```
 
 ### Test
-
 ```bash
 swift test
 ```
-
-### Adding Database Support
-
-1. Implement `DatabaseProtocol`
-2. Create adapter in `Sources/Core/Database/`
-3. Update `DatabaseType` enum
-
-### Adding AI Providers
-
-1. Implement `AIServiceProtocol`
-2. Create service in `Sources/Core/AI/`
-3. Update `AIProvider` enum
 
 ## 📋 Roadmap
 
 - [x] SQLite support
 - [x] MySQL support
+- [x] DuckDB support
 - [ ] PostgreSQL support
-- [ ] DuckDB support
 - [ ] OpenAI integration
 - [ ] Google Gemini integration
 - [ ] Data visualization
-- [ ] Query optimization suggestions
 - [ ] Export results to CSV/Excel
-
-## 🐛 Troubleshooting
-
-### Connection Issues
-- Verify database file path/credentials
-- Check file permissions
-- Ensure network connectivity for MySQL
-
-### AI Generation Failures
-- Verify AWS Bedrock is available in your region
-- Check AWS credentials and permissions
-- Confirm API quota availability
 
 ## 📄 License
 
@@ -155,12 +141,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📧 Contact
 

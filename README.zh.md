@@ -11,8 +11,8 @@
 ## ✨ 功能特性
 
 - 🗣️ **自然语言查询** - 用日常语言提问，获取 SQL 结果
-- 🤖 **AI 驱动** - 集成 AWS Bedrock (Claude 3.5) 智能生成 SQL
-- 💾 **多数据库支持** - 支持 SQLite 和 MySQL（PostgreSQL 即将推出）
+- 🤖 **AI 驱动** - 集成 AWS Bedrock (Claude 3.5/4.5) 智能生成 SQL
+- 💾 **多数据库支持** - 支持 SQLite、MySQL、PostgreSQL、DuckDB
 - 📊 **智能结果展示** - 清晰的表格呈现查询结果
 - 💡 **查询解释** - AI 自动解释生成的 SQL 查询
 - 🔍 **Schema 浏览器** - 可视化数据库结构
@@ -20,7 +20,19 @@
 
 ## 📸 截图
 
-<!-- 在此添加截图 -->
+### 数据库配置
+![数据库配置](Screenshot/db_config_01.png)
+![数据库配置详情](Screenshot/db_config_02.png)
+
+### AWS Bedrock 配置
+![Bedrock 配置](Screenshot/bedrock_config.png)
+
+### 查询界面
+![SQL 查询](Screenshot/sql_query.png)
+![AI 增强查询](Screenshot/ai_enhanced.png)
+
+### 连接设置
+![配置](Screenshot/config.png)
 
 ## 🛠 技术栈
 
@@ -29,7 +41,7 @@
 | 语言 | Swift 5.9+ |
 | UI 框架 | SwiftUI |
 | 平台 | macOS 14.0+ (Sonoma) |
-| 数据库 | SQLite, MySQL |
+| 数据库 | SQLite, MySQL, DuckDB |
 | AI 服务 | AWS Bedrock (Claude 3.5) |
 | 架构 | MVVM + 面向协议编程 |
 
@@ -40,7 +52,7 @@
 - macOS 14.0 或更高版本
 - Xcode 15.0 或更高版本
 - 具有 Bedrock 访问权限的 AWS 账户
-- 一个待查询的数据库（SQLite 或 MySQL）
+- 一个待查询的数据库（SQLite、MySQL 或 DuckDB）
 
 ### 安装
 
@@ -65,6 +77,7 @@
 2. 配置数据库：
    - **SQLite**：浏览选择 `.db` 文件
    - **MySQL**：输入主机、端口、用户名、密码和数据库名
+   - **DuckDB**：选择内存或文件模式，可附加 Parquet/CSV/JSON 文件
 3. 配置 AWS Bedrock：
    - 输入 AWS 区域（如 `us-east-1`）
    - 输入 AWS Access Key ID 和 Secret Access Key
@@ -101,52 +114,25 @@ AIDataAssistant/
 ## 🔧 开发
 
 ### 构建
-
 ```bash
 swift build
 ```
 
 ### 测试
-
 ```bash
 swift test
 ```
-
-### 添加数据库支持
-
-1. 实现 `DatabaseProtocol`
-2. 在 `Sources/Core/Database/` 中创建适配器
-3. 更新 `DatabaseType` 枚举
-
-### 添加 AI 服务
-
-1. 实现 `AIServiceProtocol`
-2. 在 `Sources/Core/AI/` 中创建服务
-3. 更新 `AIProvider` 枚举
 
 ## 📋 路线图
 
 - [x] SQLite 支持
 - [x] MySQL 支持
+- [x] DuckDB 支持
 - [ ] PostgreSQL 支持
-- [ ] DuckDB 支持
 - [ ] OpenAI 集成
 - [ ] Google Gemini 集成
 - [ ] 数据可视化
-- [ ] 查询优化建议
 - [ ] 导出结果到 CSV/Excel
-
-## 🐛 故障排除
-
-### 连接问题
-- 检查数据库文件路径/凭证
-- 检查文件权限
-- 确保 MySQL 的网络连接正常
-
-### AI 生成失败
-- 确认 AWS Bedrock 在你的区域可用
-- 检查 AWS 凭证和权限
-- 确认 API 配额充足
 
 ## 📄 许可证
 
@@ -155,12 +141,6 @@ swift test
 ## 🤝 贡献
 
 欢迎贡献！请随时提交 Pull Request。
-
-1. Fork 本仓库
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 打开 Pull Request
 
 ## 📧 联系方式
 
