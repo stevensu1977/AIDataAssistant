@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#818CF8"/>
+      <stop offset="100%" style="stop-color:#A78BFA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect x="40" y="40" width="944" height="944" rx="180" ry="180" fill="url(#bgGrad)"/>
+
+  <!-- Inner glow -->
+  <rect x="60" y="60" width="904" height="904" rx="165" ry="165" fill="none" stroke="url(#glowGrad)" stroke-width="4" opacity="0.5"/>
+
+  <!-- Database cylinder -->
+  <g transform="translate(512, 420)">
+    <!-- Cylinder body -->
+    <ellipse cx="0" cy="180" rx="200" ry="50" fill="#E0E7FF" opacity="0.9"/>
+    <rect x="-200" y="0" width="400" height="180" fill="#E0E7FF" opacity="0.9"/>
+    <ellipse cx="0" cy="0" rx="200" ry="50" fill="#F5F5FF"/>
+
+    <!-- Data lines on cylinder -->
+    <rect x="-150" y="40" width="120" height="8" rx="4" fill="#6366F1"/>
+    <rect x="-150" y="60" width="180" height="8" rx="4" fill="#6366F1" opacity="0.7"/>
+    <rect x="-150" y="80" width="100" height="8" rx="4" fill="#6366F1" opacity="0.5"/>
+
+    <rect x="-150" y="110" width="160" height="8" rx="4" fill="#6366F1"/>
+    <rect x="-150" y="130" width="140" height="8" rx="4" fill="#6366F1" opacity="0.7"/>
+    <rect x="-150" y="150" width="180" height="8" rx="4" fill="#6366F1" opacity="0.5"/>
+  </g>
+
+  <!-- AI sparkle/brain symbol -->
+  <g transform="translate(512, 720)">
+    <!-- Central AI node -->
+    <circle cx="0" cy="0" r="45" fill="#FCD34D"/>
+    <circle cx="0" cy="0" r="30" fill="#FBBF24"/>
+
+    <!-- Connection lines -->
+    <line x1="-100" y1="-60" x2="-30" y2="-20" stroke="#FCD34D" stroke-width="8" stroke-linecap="round"/>
+    <line x1="100" y1="-60" x2="30" y2="-20" stroke="#FCD34D" stroke-width="8" stroke-linecap="round"/>
+    <line x1="-120" y1="40" x2="-35" y2="15" stroke="#FCD34D" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="40" x2="35" y2="15" stroke="#FCD34D" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Outer nodes -->
+    <circle cx="-120" cy="-70" r="25" fill="#FBBF24"/>
+    <circle cx="120" cy="-70" r="25" fill="#FBBF24"/>
+    <circle cx="-140" cy="50" r="20" fill="#FBBF24"/>
+    <circle cx="140" cy="50" r="20" fill="#FBBF24"/>
+
+    <!-- Sparkle effects -->
+    <polygon points="0,-80 8,-60 0,-65 -8,-60" fill="white" opacity="0.8"/>
+    <polygon points="0,80 8,60 0,65 -8,60" fill="white" opacity="0.6"/>
+  </g>
+</svg>
+

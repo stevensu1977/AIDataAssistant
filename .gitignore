@@ -1,0 +1,55 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Swift Build
+.build/
+/Packages
+*.swiftpm
+.swiftpm/
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcworkspace
+!*.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+*.xcuserstate
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Database files
+*.db
+*.duckdb
+*.sqlite
+*.sqlite3
+
+# Secrets & Config
+.env
+.netrc
+*.pem
+*.key
+
+# AI/Claude
+.claude/
+
+# Scripts & Examples
+Scripts/
+Examples/
+
+# Documentation (AI generated)
+*总结.md
+*说明.md
+*方案.md
+*步骤.md
+*指南.md
+*诊断.md
+*细节.md
+PROJECT_PLAN.md
+ARCHITECTURE.md
+MIGRATION_SUMMARY.md
+CHANGELOG.md
+SQL_QUERY_FEATURE.md
+DUCKDB_INTEGRATION_PLAN.md
+MVP_SUMMARY.md

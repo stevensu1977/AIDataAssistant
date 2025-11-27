@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001000000000000001 /* AIDataAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000001 /* AIDataAssistantApp.swift */; };
+		A1000003000000000000001 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000004000000000000001 /* AppState.swift */; };
+		A1000005000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000006000000000000001 /* ContentView.swift */; };
+		A1000007000000000000001 /* QueryHistoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000008000000000000001 /* QueryHistoryItemView.swift */; };
+		A1000009000000000000001 /* QueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000010000000000000001 /* QueryView.swift */; };
+		A1000011000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000012000000000000001 /* SettingsView.swift */; };
+		A1000013000000000000001 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000014000000000000001 /* SidebarView.swift */; };
+		A1000015000000000000001 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000016000000000000001 /* WelcomeView.swift */; };
+		A1000017000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000018000000000000001 /* Assets.xcassets */; };
+		A1000019000000000000001 /* DatabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000020000000000000001 /* DatabaseConfig.swift */; };
+		A1000021000000000000001 /* AIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000022000000000000001 /* AIConfig.swift */; };
+		A1000023000000000000001 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000024000000000000001 /* Schema.swift */; };
+		A1000025000000000000001 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000026000000000000001 /* Query.swift */; };
+		A1000027000000000000001 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000028000000000000001 /* DatabaseProtocol.swift */; };
+		A1000029000000000000001 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000030000000000000001 /* SQLiteDatabase.swift */; };
+		A1000031000000000000001 /* AIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000032000000000000001 /* AIServiceProtocol.swift */; };
+		A1000033000000000000001 /* BedrockAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000034000000000000001 /* BedrockAIService.swift */; };
+		A1000035000000000000001 /* AWSBedrockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000036000000000000001 /* AWSBedrockClient.swift */; };
+		A1000037000000000000001 /* QueryEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000038000000000000001 /* QueryEngine.swift */; };
+		A1000039000000000000001 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = A1000040000000000000001 /* SQLite */; };
+		C42E90082ED6FA1000138A53 /* MySQLNIO in Frameworks */ = {isa = PBXBuildFile; productRef = C42E90072ED6FA1000138A53 /* MySQLNIO */; };
+		C4BF584E2ED8741A009CC817 /* DuckDB in Frameworks */ = {isa = PBXBuildFile; productRef = C4BF584D2ED8741A009CC817 /* DuckDB */; };
+		C4BF58502ED87493009CC817 /* DuckDBDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF584F2ED87493009CC817 /* DuckDBDatabase.swift */; };
+		C4BF58532ED874CA009CC817 /* PostgresNIO in Frameworks */ = {isa = PBXBuildFile; productRef = C4BF58522ED874CA009CC817 /* PostgresNIO */; };
+		C4BF58552ED874CA009CC817 /* _ConnectionPoolModule in Frameworks */ = {isa = PBXBuildFile; productRef = C4BF58542ED874CA009CC817 /* _ConnectionPoolModule */; };
+		C4BF58572ED874CA009CC817 /* _ConnectionPoolTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = C4BF58562ED874CA009CC817 /* _ConnectionPoolTestUtils */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1000002000000000000001 /* AIDataAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDataAssistantApp.swift; sourceTree = "<group>"; };
+		A1000004000000000000001 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A1000006000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1000008000000000000001 /* QueryHistoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryHistoryItemView.swift; sourceTree = "<group>"; };
+		A1000010000000000000001 /* QueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryView.swift; sourceTree = "<group>"; };
+		A1000012000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1000014000000000000001 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		A1000016000000000000001 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A1000018000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000020000000000000001 /* DatabaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConfig.swift; sourceTree = "<group>"; };
+		A1000022000000000000001 /* AIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIConfig.swift; sourceTree = "<group>"; };
+		A1000024000000000000001 /* Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		A1000026000000000000001 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		A1000028000000000000001 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
+		A1000030000000000000001 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		A1000032000000000000001 /* AIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIServiceProtocol.swift; sourceTree = "<group>"; };
+		A1000034000000000000001 /* BedrockAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedrockAIService.swift; sourceTree = "<group>"; };
+		A1000036000000000000001 /* AWSBedrockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSBedrockClient.swift; sourceTree = "<group>"; };
+		A1000038000000000000001 /* QueryEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryEngine.swift; sourceTree = "<group>"; };
+		A1000041000000000000001 /* AIDataAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIDataAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BF584F2ED87493009CC817 /* DuckDBDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckDBDatabase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1000042000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4BF58572ED874CA009CC817 /* _ConnectionPoolTestUtils in Frameworks */,
+				C4BF58552ED874CA009CC817 /* _ConnectionPoolModule in Frameworks */,
+				C4BF58532ED874CA009CC817 /* PostgresNIO in Frameworks */,
+				C42E90082ED6FA1000138A53 /* MySQLNIO in Frameworks */,
+				A1000039000000000000001 /* SQLite in Frameworks */,
+				C4BF584E2ED8741A009CC817 /* DuckDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1000043000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A1000044000000000000001 /* AIDataAssistantApp */,
+				A1000045000000000000001 /* Sources */,
+				A1000046000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1000044000000000000001 /* AIDataAssistantApp */ = {
+			isa = PBXGroup;
+			children = (
+				C4BF584F2ED87493009CC817 /* DuckDBDatabase.swift */,
+				A1000002000000000000001 /* AIDataAssistantApp.swift */,
+				A1000004000000000000001 /* AppState.swift */,
+				A1000047000000000000001 /* Views */,
+				A1000018000000000000001 /* Assets.xcassets */,
+			);
+			path = AIDataAssistantApp;
+			sourceTree = "<group>";
+		};
+		A1000045000000000000001 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A1000048000000000000001 /* Core */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A1000046000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000041000000000000001 /* AIDataAssistant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1000047000000000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1000006000000000000001 /* ContentView.swift */,
+				A1000008000000000000001 /* QueryHistoryItemView.swift */,
+				A1000010000000000000001 /* QueryView.swift */,
+				A1000012000000000000001 /* SettingsView.swift */,
+				A1000014000000000000001 /* SidebarView.swift */,
+				A1000016000000000000001 /* WelcomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1000048000000000000001 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A1000049000000000000001 /* Models */,
+				A1000050000000000000001 /* Database */,
+				A1000051000000000000001 /* AI */,
+				A1000052000000000000001 /* QueryEngine */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A1000049000000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1000020000000000000001 /* DatabaseConfig.swift */,
+				A1000022000000000000001 /* AIConfig.swift */,
+				A1000024000000000000001 /* Schema.swift */,
+				A1000026000000000000001 /* Query.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1000050000000000000001 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A1000028000000000000001 /* DatabaseProtocol.swift */,
+				A1000030000000000000001 /* SQLiteDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A1000051000000000000001 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				A1000032000000000000001 /* AIServiceProtocol.swift */,
+				A1000034000000000000001 /* BedrockAIService.swift */,
+				A1000036000000000000001 /* AWSBedrockClient.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		A1000052000000000000001 /* QueryEngine */ = {
+			isa = PBXGroup;
+			children = (
+				A1000038000000000000001 /* QueryEngine.swift */,
+			);
+			path = QueryEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000053000000000000001 /* AIDataAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000054000000000000001 /* Build configuration list for PBXNativeTarget "AIDataAssistant" */;
+			buildPhases = (
+				A1000055000000000000001 /* Sources */,
+				A1000042000000000000001 /* Frameworks */,
+				A1000056000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIDataAssistant;
+			packageProductDependencies = (
+				A1000040000000000000001 /* SQLite */,
+				C42E90072ED6FA1000138A53 /* MySQLNIO */,
+				C4BF584D2ED8741A009CC817 /* DuckDB */,
+				C4BF58522ED874CA009CC817 /* PostgresNIO */,
+				C4BF58542ED874CA009CC817 /* _ConnectionPoolModule */,
+				C4BF58562ED874CA009CC817 /* _ConnectionPoolTestUtils */,
+			);
+			productName = AIDataAssistant;
+			productReference = A1000041000000000000001 /* AIDataAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1000057000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1000053000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A1000058000000000000001 /* Build configuration list for PBXProject "AIDataAssistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1000043000000000000001;
+			packageReferences = (
+				A1000059000000000000001 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				C42E90062ED6FA1000138A53 /* XCRemoteSwiftPackageReference "mysql-nio" */,
+				C4BF584C2ED8741A009CC817 /* XCRemoteSwiftPackageReference "duckdb-swift" */,
+				C4BF58512ED874CA009CC817 /* XCRemoteSwiftPackageReference "postgres-nio" */,
+			);
+			productRefGroup = A1000046000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000053000000000000001 /* AIDataAssistant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000056000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000017000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000055000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000000000000001 /* AIDataAssistantApp.swift in Sources */,
+				A1000003000000000000001 /* AppState.swift in Sources */,
+				A1000005000000000000001 /* ContentView.swift in Sources */,
+				A1000007000000000000001 /* QueryHistoryItemView.swift in Sources */,
+				A1000009000000000000001 /* QueryView.swift in Sources */,
+				C4BF58502ED87493009CC817 /* DuckDBDatabase.swift in Sources */,
+				A1000011000000000000001 /* SettingsView.swift in Sources */,
+				A1000013000000000000001 /* SidebarView.swift in Sources */,
+				A1000015000000000000001 /* WelcomeView.swift in Sources */,
+				A1000019000000000000001 /* DatabaseConfig.swift in Sources */,
+				A1000021000000000000001 /* AIConfig.swift in Sources */,
+				A1000023000000000000001 /* Schema.swift in Sources */,
+				A1000025000000000000001 /* Query.swift in Sources */,
+				A1000027000000000000001 /* DatabaseProtocol.swift in Sources */,
+				A1000029000000000000001 /* SQLiteDatabase.swift in Sources */,
+				A1000031000000000000001 /* AIServiceProtocol.swift in Sources */,
+				A1000033000000000000001 /* BedrockAIService.swift in Sources */,
+				A1000035000000000000001 /* AWSBedrockClient.swift in Sources */,
+				A1000037000000000000001 /* QueryEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1000060000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1000061000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A1000062000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Data Assistant";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidataassistant.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1000063000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Data Assistant";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidataassistant.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1000054000000000000001 /* Build configuration list for PBXNativeTarget "AIDataAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000062000000000000001 /* Debug */,
+				A1000063000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000058000000000000001 /* Build configuration list for PBXProject "AIDataAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000060000000000000001 /* Debug */,
+				A1000061000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1000059000000000000001 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.0;
+			};
+		};
+		C42E90062ED6FA1000138A53 /* XCRemoteSwiftPackageReference "mysql-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/mysql-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+		C4BF584C2ED8741A009CC817 /* XCRemoteSwiftPackageReference "duckdb-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/duckdb/duckdb-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		C4BF58512ED874CA009CC817 /* XCRemoteSwiftPackageReference "postgres-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/postgres-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1000040000000000000001 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1000059000000000000001 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		C42E90072ED6FA1000138A53 /* MySQLNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C42E90062ED6FA1000138A53 /* XCRemoteSwiftPackageReference "mysql-nio" */;
+			productName = MySQLNIO;
+		};
+		C4BF584D2ED8741A009CC817 /* DuckDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4BF584C2ED8741A009CC817 /* XCRemoteSwiftPackageReference "duckdb-swift" */;
+			productName = DuckDB;
+		};
+		C4BF58522ED874CA009CC817 /* PostgresNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4BF58512ED874CA009CC817 /* XCRemoteSwiftPackageReference "postgres-nio" */;
+			productName = PostgresNIO;
+		};
+		C4BF58542ED874CA009CC817 /* _ConnectionPoolModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4BF58512ED874CA009CC817 /* XCRemoteSwiftPackageReference "postgres-nio" */;
+			productName = _ConnectionPoolModule;
+		};
+		C4BF58562ED874CA009CC817 /* _ConnectionPoolTestUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4BF58512ED874CA009CC817 /* XCRemoteSwiftPackageReference "postgres-nio" */;
+			productName = _ConnectionPoolTestUtils;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A1000057000000000000001 /* Project object */;
+}
